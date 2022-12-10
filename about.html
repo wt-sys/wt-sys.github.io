@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Here you can find out about the project, who created it and everything like that!">
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/light.css" media="(prefers-color-scheme: light)">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/dark.css" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.cdnfonts.com/css/google-sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/google-sans');
+    </style>
+    <script>  
+        setInterval(function () {
+            var now = new Date();
+            var clock = document.getElementById("clock");
+            clock.innerHTML = now.toLocaleTimeString();
+        }, 1000);
+    </script>
+    <title>About project</title>
+</head>
+<body>
+    <a class="switch" href="ru/about.html" title="Сменить язык (RU)"><span class="material-symbols-rounded">public</span></a>
+    <nav class="navbar">
+        <div class="navbar__wrap">
+            <div class="hamb">
+                <div class="hamb__field" id="hamb">
+                <span class="bar"></span> <span class="bar"></span>
+                <span class="bar"></span>
+                </div>
+            </div>
+                <ul class="menu" id="menu">
+                    <li><a href="index.html" title="Home page"><span class="material-symbols-rounded" >home</span> Home</a></li>
+                    <li><a href="changelog.html" title="There are innovations here! :)"><span class="material-symbols-rounded">edit_document</span> Changelog</a></li>
+                    <li><a href="soft.html" title="Programs and other"><span class="material-symbols-rounded">computer</span> Programs</a></li>
+                    <li><a href="themes.html" title="Themes, Wallpapers"><span class="material-symbols-rounded">palette</span> Customization</a></li>
+                    <li><a class="active" href="about.html" title="About project"><span class="material-symbols-rounded">account_circle</span> About</a></li>
+                    <li><a href="socials.html" title="My Socials"><span class="material-symbols-rounded">link</span> Socials</a></li>
+                </ul>
+        </div>
+  </nav>
+  <div class="popup" id="popup"></div>
+  <script src="js/scrip.js"></script>
+    <div class="header">
+        <div class="font">
+            <span class="material-symbols-rounded" style="font-size: 50px; color: var(--back-color-a1-200)">account_circle</span>
+            <h1>About the project and creator:</h1>
+            <div class="header-in-header">
+            <div>
+            <div class="about">
+            <a href="https://www.youtube.com/channel/UC6wNi6iQFVSnd-eJivuG3_Q"><img src="styles/logo.png" class="about-mini" weight="140" height="140" align="left"></a>
+            <br>
+            <h1>Created by Windows Tester</h1><br>
+            Website created in Visual Studio Code<br>
+            Helped me<br>
+            <a href="https://nerok-web.github.io" class="link">Nerok</a> and
+            <a href="beta.mayplanet.ml" class="link">Maydilsiel</a>
+            <br><br><br>
+            </div></a><br><br>
+                <div class="about2">
+                <img src="styles/VMware_Workstation_11.0_icon.png" class="about-mini2" weight="140" height="140">
+                <br>
+                <h1>I'm using</h1><br>
+                Virtual machine: VMware Workstation 12<br>
+                Video editing software: Wondershare Filmora X<br>
+                Video recording software: Bandicam
+                <br><br><br>
+                </div><br><br>
+                    <div class="about3">
+                    <img src="styles/this_pc.png" class="about-mini3" weight="140" height="140" align="left">
+                    <br>
+                    <h1>My PC:</h1><br>
+                    CPU: Intel Core 2 Quad (2.40 GHz)<br>
+                    RAM: 4GB DDR3<br>
+                    GPU: NVIDIA Geforce 9500 GT 1GB<br>
+                    Motherboard: G41MT-S2PT
+                    <br><br><br>
+                    </div><br><br>
+            </div>
+        </div>
+        </div>
+        <div class="friends">
+            <div style="font-size: 20px;"><span class="material-symbols-rounded">group</span><br>My friends:</div>
+                <a href="https://nerok-web.github.io"><img src="img/nerok_banner.png" class="friends-link" alt="Nerok"/></a>
+                <a href="https://ertorworld.ru"><img src="img/ertorworld.png" class="friends-link" alt="ertorworld"></a>
+                <a href="https://mayplanet.ml"><img src="img/maybanner.png" class="friends-link" alt="maydilsiel"></a>
+                <a href="https://lisikpng.com"><img src="http://lisikpng.com/img/baner.png" class="friends-link"></a>
+                <h4 style="padding: 0px;">If you want to be here, write in PM <a href="https://t.me/Windows_Tester" class="link">Telegram</a></h4>
+                <div class="font" style="padding: 0px;">
+                    Current Time:
+                    <span id="clock" class="time"></span>
+                    <p>Time until new year: <span id="demo" class="time"></span></p>
+                    <script src="js/timer.js"></script>
+                </div>
+        </div>
+    </div>
+</body>
+<footer class="footer" style="text-align: center;">
+    <div class="font" style="padding: 0px;">
+        <p>Copyright © Windows Tester, 2022 - 2022. Hosted by <a href="https//:github.com" class="link">Github</a></p>
+<textarea disabled="" rows="4" cols="36" name="text">
+You can add link on my website! Use this code!
+<a href="wt-sys.github.io"><img src="https://github.com/wt-sys/wt-sys.github.io/blob/main/img/WT.png" style="border-radius: 10px;" alt="WT"/></a>
+</textarea>
+    <form action="img/WT.png" target="_blank">
+        <button style="padding: 5px; font-size: 10px;">Download button logo file (PNG)</button>
+    </form>
+    </div>
+    </div>
+</footer>
+</html>

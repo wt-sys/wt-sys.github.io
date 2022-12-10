@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/light.css" media="(prefers-color-scheme: light)">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/dark.css" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.cdnfonts.com/css/google-sans" rel="stylesheet">
+    <script>  
+        setInterval(function () {
+            var now = new Date();
+            var clock = document.getElementById("clock");
+            clock.innerHTML = now.toLocaleTimeString();
+        }, 1000);
+    </script>
+    <title>Socials</title>
+</head>
+<body>
+    <a class="switch" href="ru/socials.html" title="Сменить язык (RU)"><span class="material-symbols-rounded">public</span></a>
+    <nav class="navbar">
+        <div class="navbar__wrap">
+            <div class="hamb">
+                <div class="hamb__field" id="hamb">
+                    <span class="bar"></span> <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+            <ul class="menu" id="menu">
+                <li><a href="index.html" title="Home page"><span class="material-symbols-rounded" >home</span> Home</a></li>
+                <li><a href="changelog.html" title="There are innovations here! :)"><span class="material-symbols-rounded">edit_document</span> Changelog</a></li>
+                <li><a href="soft.html" title="Programs and other"><span class="material-symbols-rounded">computer</span> Programs</a></li>
+                <li><a href="themes.html" title="Themes, Wallpapers and more"><span class="material-symbols-rounded">palette</span> Customization</a></li>
+                <li><a href="about.html" title="About project"><span class="material-symbols-rounded">account_circle</span> About</a></li>
+                <li><a class="active" href="socials.html" title="My socials"><span class="material-symbols-rounded">link</span> Socials</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="popup" id="popup"></div>
+    <script src="js/scrip.js"></script>
+    <div class="header">
+        <div class="font">
+            <span class="material-symbols-rounded" style="font-size: 50px; color: var(--back-color-a1-200)">link</span>
+            <h1>My Socials</h1>
+            <h3>Here you can find all my active socials</h3>
+            <h3>Join now! I am glad to every new user! :D</h3>
+            <div class="header-in-header">
+                <div class="form-back">
+                    <h3><i class="fa fa-telegram"></i> Telegram</h3>
+                    <h4>The main news source where YouTube channel news, website updates, and more are stored</h4>
+                    <form action="https://t.me/wt_news5566" target="_blank">
+                        <button>Join</button>
+                    </form>
+                </div>
+                <br>
+                <div class="form-back">
+                    <h3><i class="fa fa-youtube-play"></i> YouTube</h3>
+                    <h4>Source for posting new videos! Subscribe :D</h4>
+                    <form action="https://www.youtube.com/channel/UC6wNi6iQFVSnd-eJivuG3_Q" target="_blank">
+                        <button>Subscribe</button>
+                    </form>
+                </div>
+                <br>
+                <div class="form-back">
+                    <h3><i class="fa fa-github"></i> GitHub</h3>
+                    <h4>Source hosting my site! (Yes, my website is open source, you can check it out for yourself!)</h4>
+                    <form action="https://github.com/wt-sys" target="_blank">
+                        <button>Check it</button>
+                    </form>
+                </div>
+            </div>
+    </div>
+</body>
+</html>

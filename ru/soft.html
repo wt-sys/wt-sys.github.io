@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/dark.css" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="styles/light.css" media="(prefers-color-scheme: light)">
+    <link href="https://fonts.cdnfonts.com/css/google-sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script>  
+        setInterval(function () {
+            var now = new Date();
+            var clock = document.getElementById("clock");
+            clock.innerHTML = now.toLocaleTimeString();
+        }, 1000);
+    </script>
+    <title>Soft</title>
+</head>
+<body>
+    <a class="switch" href="../soft.html" title="Switch Language"><span class="material-symbols-rounded">public</span></a>
+    <nav class="navbar">
+        <div class="navbar__wrap">
+          <div class="hamb">
+            <div class="hamb__field" id="hamb">
+              <span class="bar"></span> <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </div>
+          <ul class="menu" id="menu">
+                <li><a href="index.html" title="Главная страница"><span class="material-symbols-rounded" >home</span> Главная</a></li>
+                <li><a href="changelog.html" title="Тут есть нововведения! :)"><span class="material-symbols-rounded">edit_document</span> Список изменений</a></li>
+                <li><a class="active" href="soft.html" title="Программы и прочее"><span class="material-symbols-rounded">computer</span> Программы</a></li>
+                <li><a href="themes.html" title="Темы, обои и т.д."><span class="material-symbols-rounded">palette</span> Кастомизация</a></li>
+                <li><a href="about.html" title="О проекте"><span class="material-symbols-rounded">account_circle</span> О проекте</a></li>
+                <li><a href="socials.html" title="My Socials"><span class="material-symbols-rounded">link</span> Соц. сети</a></li>
+          </ul>
+        </div>
+  </nav>
+  <div class="popup" id="popup"></div>
+  <script src="js/scrip.js"></script>
+    <div class="header">
+        <div class="font">
+            <span class="material-symbols-rounded" style="font-size: 50px; color: var(--back-color-a1-200)">computer</span>
+            <h1>Программы для ПК</h1>
+            <h3>Здесь собраны программы для ПК! Посмотри, может найдёшь что-нибудь полезное!</h3>
+            <h3>Перейти в раздел <a class="link" href="android.html">"Программы для Android"</a></h3>
+            <h3>Перейти в раздел <a class="link" href="magisk.html">"Модули Magisk (ROOT)"</a></h3>
+            <h3>Образы Windows можно найти здесь - <a class="link" href="https://disk.yandex.ru/d/ZfBhHRQiGhmMuA">Yandex Disk</a> (Источник не мой!)</h3>
+            <div class="header-in-header">
+                <div class="form-back">
+                    <h3>Google Chrome</h3><h4>Простой, но удобный браузер с привязкой к сервисам Google (Значительно лучше чем Opera и Yandex!)</h4>
+                    <form action="https://www.google.com/intl/ru_ru/chrome/" target="_blank">
+                        <button>Установить с оффициального источника</button>
+                    </form>
+                </div>
+                <br>
+                <div class="form-back">
+                    <h3>Mozila FireFox</h3><h4>Простой, но удобный браузер с открытым исходным кодом (Значительно лучше чем Opera и Yandex!)</h4>
+                    <form action="https://www.mozilla.org/ru/firefox/new/" target="_blank">
+                        <button>Установить с оффициального источника</button>
+                    </form>
+                </div>
+                <br>
+                <div class="form-back">
+                    <h3>Chromium</h3><h4>Браузер тот же, что и Google Chrome, но без сервисов Google и с открытым кодом</h4>
+                    <form action="https://download-chromium.appspot.com/" target="_blank">
+                        <button>Установить с оффициального источника</button>
+                    </form>
+                </div>
+                <br>
+                <div class="form-back">
+                    <h3>Process Hacker</h3><h4>Бесплатная утилита с открытым исходным кодом для мониторинга системных процессов и служб, запущенных под управлением 32-битных и 64-разрядных операционных систем семейства Windows, используемая как замена или дополнение диспетчера задач Windows.</h4>
+                    <form action="https://processhacker.sourceforge.io/downloads.php" target="_blank">
+                        <button>Установить с оффициального источника</button>
+                    </form>
+                </div>
+                <br>
+                <div class="form-back">
+                    <h3>7-Zip</h3><h4>Свободный файловый архиватор с высокой степенью сжатия данных. Поддерживает несколько алгоритмов сжатия и множество форматов данных, включая собственный формат 7z c высокоэффективным алгоритмом сжатия LZMA.</h4>
+                    <form action="https://www.7-zip.org/download.html" target="_blank">
+                        <button>Установить с оффициального источника</button>
+                    </form>
+                </div>
+                <br>
+                <div class="form-back">
+                    <h3>Mem Reduct</h3><h4>Легкое приложение для управления памятью в режиме реального времени для мониторинга и очистки системной памяти на вашем компьютере.</h4>
+                    <form action="https://www.henrypp.org/product/memreduct" target="_blank">
+                        <button>Установить с оффициального источника</button>
+                    </form>
+                </div>
+                <br>
+                <div class="form-back">
+                    <h3>CPU-Z</h3><h4>Бесплатная прикладная программа-утилита для отображения технической информации о персональном компьютере пользователя, работающая под ОС Microsoft Windows начиная с версии Windows 95. Выпускается также специальная версия под Android.</h4>
+                    <form action="https://www.cpuid.com/softwares/cpu-z.html" target="_blank">
+                        <button>Установить с оффициального источника</button>
+                    </form>
+                </div>    
+                <br>
+                <div class="form-back">
+                    <h3>Winaero Tweaker</h3><h4>Бесплатное приложение для всех версий Windows, которое позволяет настраивать (т. е. настраивать) скрытые секретные параметры, которые Microsoft не позволяет настраивать из пользовательского интерфейса.</h4>
+                    <form action="https://winaero.com/download-winaero-tweaker/" target="_blank">
+                        <button>Установить с оффициального источника</button>
+                    </form>
+                </div>
+                <br>
+                <div class="form-back">
+                    <h3>Victoria</h3><h4>Компьютерная программа, предназначенная для оценки работоспособности, тестирования и мелкого ремонта жёстких дисков. Разработана индивидуальным предпринимателем из Москвы, ныне проживающим и работающим в Минске, и специалистом по восстановлению информации Казанским Сергеем Олеговичем. Бесплатна.</h4>
+                    <form action="https://hdd.by/victoria/" target="_blank">
+                        <button>Установить с оффициального источника</button>
+                    </form>
+                </div>
+                <br>
+                <div class="form-back">
+                    <h3>AIDA64</h3><h4>Утилита FinalWire Ltd. для тестирования и идентификации компонентов персонального компьютера под управлением операционных систем Windows, предоставляющая детальные сведения об аппаратном и программном обеспечении.</h4>
+                    <form action="https://www.aida64.com/downloads" target="_blank">
+                        <button>Установить с оффициального источника</button>
+                    </form>
+                </div>
+                <br>
+                <div class="form-back">
+                    <h3>Visual Studio Code</h3><h4>Редактор исходного кода, разработанный Microsoft для Windows, Linux и macOS. Позиционируется как «лёгкий» редактор кода для кроссплатформенной разработки Web и облачных приложений.</h4>
+                    <form action="https://code.visualstudio.com/download" target="_blank">
+                        <button>Установить с оффициального источника</button>
+                    </form>
+                </div>
+                <br>
+                <div class="form-back">
+                    <h3>Mi Unlock Tool</h3><h4>Утилита для разблокировки загрузчика устройств Xiaomi (Единственная рабочая версия)</h4>
+                    <form action="https://drive.google.com/file/d/1Ru51cL9v63sNq0vCsHiqJWMg3cEGP4Bh/view?usp=share_link" target="_blank">
+                        <button>Google Drive</button>
+                    </form>
+                </div>
+                <br>
+                <div class="form-back">
+                    <h3>ADB & Fastboot Драйвера</h3><h4>Драйвера для устройств на базе Android для найстройки, восстановления телефона через ПК</h4>
+                    <form action="https://drive.google.com/file/d/1O0ZzjaQIQBv4CQ_MlV-MhxJHD3FgBhHI/view?usp=share_link" target="_blank">
+                        <button>Google Drive</button>
+                    </form>
+                </div>
+                <br>
+                <div class="form-back">
+                    <h3>Odin</h3><h4>Odin - официальная утилита для ПК, которая позволяет обновить прошивку или установить модем, ядро или другие компоненты прошивки Вашего смартфона или планшета от компании Samsung на платформе Android. Внимание!!! Программа Odin совместима только с устройствами Samsung на платформе Android!</h4>
+                    <form action="https://drive.google.com/file/d/1O0ZzjaQIQBv4CQ_MlV-MhxJHD3FgBhHI/view?usp=share_link" target="_blank">
+                        <button>Google Drive</button>
+                    </form>
+                </div>
+                <br>
+                <div class="form-back">
+                    <h3>Samsung USB Driver</h3><h4>Драйвера на USB исключительно для устройств бренда Samsung</h4>
+                    <form action="https://developer.samsung.com/android-usb-driver" target="_blank">
+                        <button>Google Drive</button>
+                    </form>
+                </div>
+                <br>
+                <div class="form-back">
+                    <h3>Scrcpy</h3><h4>Это приложение обеспечивает отображение и управление Android-устройствами, подключенными через USB или TCP/IP. Он не требует никакого ROOT-доступа. Он работает на GNU/Linux, Windows и MacOS</h4>
+                    <form action="https://github.com/Genymobile/scrcpy" target="_blank">
+                        <button>GitHub</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="friends">
+            <div style="font-size: 20px;"><span class="material-symbols-rounded">group</span><br>Мои друзья:</div>
+                <a href="https://nerok-web.github.io"><img src="img/nerok_banner.png" class="friends-link" alt="Nerok"/></a>
+                <a href="https://ertorworld.ru"><img src="img/ertorworld.png" class="friends-link" alt="ertorworld"></a>
+                <a href="https://mayplanet.ml"><img src="img/maybanner.png" class="friends-link" alt="maydilsiel"></a>
+                <a href="https://lisikpng.com"><img src="http://lisikpng.com/img/baner.png" class="friends-link"></a>
+                <h4 style="padding: 0px;">Хочешь быть здесь, пиши в ЛС <a href="https://t.me/Windows_Tester" class="link">Telegram</a></h4>
+                <div class="font" style="padding: 0px;">
+                    Текущее время:
+                    <span id="clock" class="time"></span>
+                    <p>Время до нового года: <span id="demo" class="time"></span></p>
+                    <script src="js/timer.js"></script>
+                </div>
+        </div>
+    </div>
+</body>
+<footer class="footer" style="text-align: center;">
+    <div class="font" style="padding: 0px;">
+        <p>Copyright © Windows Tester, 2022 - 2022. Источник хостинга - <a href="https//:github.com" class="link">Github</a></p>
+<textarea disabled="" rows="4" cols="36" name="text">
+You can add link on my website! Use this code!
+<a href="wt-sys.github.io"><img src="https://github.com/wt-sys/wt-sys.github.io/blob/main/img/WT.png" style="border-radius: 10px;" alt="WT"/></a>
+</textarea>
+    <form action="img/WT.png" target="_blank">
+        <button style="padding: 5px; font-size: 10px;">Скачать картинку для кнопки (PNG)</button>
+    </form>
+    </div>
+    </div>
+</footer>
+</html>

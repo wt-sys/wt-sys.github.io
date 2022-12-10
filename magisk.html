@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/dark.css" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="styles/light.css" media="(prefers-color-scheme: light)">
+    <link href="https://fonts.cdnfonts.com/css/google-sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script>  
+        setInterval(function () {
+            var now = new Date();
+            var clock = document.getElementById("clock");
+            clock.innerHTML = now.toLocaleTimeString();
+        }, 1000);
+    </script>
+    <title>Soft (Magisk)</title>
+</head>
+<body>
+    <a class="switch" href="ru/magisk.html" title="Сменить язык (RU)"><span class="material-symbols-rounded">public</span></a>
+    <nav class="navbar">
+        <div class="navbar__wrap">
+          <div class="hamb">
+            <div class="hamb__field" id="hamb">
+              <span class="bar"></span> <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </div>
+          <ul class="menu" id="menu">
+            <li><a href="index.html" title="Home page"><span class="material-symbols-rounded" >home</span> Home</a></li>
+            <li><a href="changelog.html" title="There are innovations here! :)"><span class="material-symbols-rounded">edit_document</span> Changelog</a></li>
+            <li><a href="soft.html" title="Programs and other"><span class="material-symbols-rounded">computer</span> Programs</a></li>
+            <li><a href="themes.html" title="Themes, Wallpapers and more"><span class="material-symbols-rounded">palette</span> Customization</a></li>
+            <li><a href="about.html" title="About project"><span class="material-symbols-rounded">account_circle</span> About</a></li>
+            <li><a href="socials.html" title="My Socials"><span class="material-symbols-rounded">link</span> Socials</a></li>
+          </ul>
+        </div>
+  </nav>
+  <div class="popup" id="popup"></div>
+  <script src="js/scrip.js"></script>
+    <div class="header">
+        <div class="font">
+            <span class="material-symbols-rounded" style="font-size: 50px; color: var(--back-color-a1-200)">settings</span>
+            <h1>Magisk Modules</h1>
+            <h3>Here are collected useful modules for Magisk! See if you can find something useful!</h3>
+            <h3>Return to the section <a class="link" href="soft.html">"PC software"</a></h3>
+            <h3>Go to <a class="link" href="android.html">"Apps for Android"</a></h3>
+            <div class="header-in-header">
+                <div class="form-back">
+                    <h3>Magisk Manager</h3><h4>APK / ZIP application for installing and managing ROOT rights. Installed in a special modified version of Recovery (<a class="link" href="https://twrp.me/">TWRP</a> or <a class="link" href="https://orangefox.download /">Orange Fox Recovery Project</a>)</h4>
+                    <form action="https://github.com/topjohnwu/Magisk" target="_blank">
+                        <button>GitHub</button>
+                    </form>
+                </div>
+                <br>
+                <div class="form-back">
+                    <h3>Pixelify</h3><h4>Enabling all possible features from Google Pixel phones<br>Requirements:<br>1. Android Version: Android 7.0 to Android 13<br>2. Device Arm64<br>3. The presence of volume keys<br>4. Web for NGA Resources, Pixel Live Wallpapers, Device Personalization Services, and Pixel<br>5 Launcher. Zygisk or Riru (recommended but not required)</h4>
+                    <form action="https://github.com/Kingsman44/Pixelify" target="_blank">
+                        <button>GitHub</button>
+                    </form>
+                </div>
+                <br>
+                <div class="form-back">
+                    <h3>Universal Safety Fix</h3><h4>Magisk module to bypass Google SafetyNet attestation.</h4>
+                    <form action="https://github.com/kdrag0n/safetynet-fix" target="_blank">
+                        <button>GitHub</button>
+                    </form>
+                </div>
+                <br>
+                <div class="form-back">
+                    <h3>Ad block</h3><h4>Magisk module for blocking ads in apps and on the web. Doesn't work in the YouTube app</h4>
+                    <form action="https://github.com/pantsufan/Magisk-Ad-Blocking-Module" target="_blank">
+                        <button>GitHub</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="friends">
+            <div style="font-size: 20px;"><span class="material-symbols-rounded">group</span><br>My friends:</div>
+                <a href="https://nerok-web.github.io"><img src="img/nerok_banner.png" class="friends-link" alt="Nerok"/></a>
+                <a href="https://ertorworld.ru"><img src="img/ertorworld.png" class="friends-link" alt="ertorworld"></a>
+                <a href="https://mayplanet.ml"><img src="img/maybanner.png" class="friends-link" alt="maydilsiel"></a>
+                <a href="https://lisikpng.com"><img src="http://lisikpng.com/img/baner.png" class="friends-link"></a>
+                <h4 style="padding: 0px;">If you want to be here, write in PM <a href="https://t.me/Windows_Tester" class="link">Telegram</a></h4>
+                <div class="font" style="padding: 0px;">
+                    Current Time:
+                    <span id="clock" class="time"></span>
+                    <p>Time until new year: <span id="demo" class="time"></span></p>
+                    <script src="js/timer.js"></script>
+                </div>
+        </div>
+    </div>
+</body>
+<footer class="footer" style="text-align: center;">
+    <div class="font" style="padding: 0px;">
+        <p>Copyright © Windows Tester, 2022 - 2022. Hosted by <a href="https//:github.com" class="link">Github</a></p>
+<textarea disabled="" rows="4" cols="36" name="text">
+You can add link on my website! Use this code!
+<a href="wt-sys.github.io"><img src="https://github.com/wt-sys/wt-sys.github.io/blob/main/img/WT.png" style="border-radius: 10px;" alt="WT"/></a>
+</textarea>
+    <form action="img/WT.png" target="_blank">
+        <button style="padding: 5px; font-size: 10px;">Download button logo file (PNG)</button>
+    </form>
+    </div>
+    </div>
+</footer>
+</html>
