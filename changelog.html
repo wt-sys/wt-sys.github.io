@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles/light.css" media="(prefers-color-scheme: light)">
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/dark.css" media="(prefers-color-scheme: dark)">
+    <link rel="shortcut icon" href="assets/image/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/light.css" media="(prefers-color-scheme: light)">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/dark.css" media="(prefers-color-scheme: dark)">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.cdnfonts.com/css/google-sans" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -17,6 +17,15 @@
             var clock = document.getElementById("clock");
             clock.innerHTML = now.toLocaleTimeString();
         }, 1000);
+    </script>
+    <script>
+        function myFunction() {
+        var copyText = document.getElementById("myInput");
+        copyText.select();
+        document.execCommand("copy");
+        alert("Copied!" // + copyText.value
+        );
+        }
     </script>
     <title>Changelog</title>
 </head>
@@ -41,7 +50,7 @@
         </div>
   </nav>
   <div class="popup" id="popup"></div>
-  <script src="js/scrip.js"></script>
+  <script src="assets/js/nav.js"></script>
     <div class="header">
         <div class="font">
             <span class="material-symbols-rounded" style="font-size: 50px; color: var(--back-color-a1-200)">edit_document</span>
@@ -50,6 +59,14 @@
             <h3>Default update</h3>
             <h3 style="color: var(--back-color-all-1);">Little update</h3>
             <div class="header-in-header">
+                <h3 style="color: var(--back-color-a3-200);">Changes 12/24/2022</h3>
+                <h4>1. Changed colors!</h4>
+                <h4>2. Time and timer moved to the basement</h4>
+                <h4>3. The section "About the project" has been redesigned</h4>
+                <h4>4. Arranged in files</h4>
+                <h4>5. Copy text button!</h4>
+                <h4>6. Removed and changed some lines of code!</h4>
+                <br>
                 <h3>Changes 10.12.2022 year - 9.12.2022 year</h3>
                 <h4>1. Introducing the English version of the website</h4>
                 <h4>2. The changelog in the English version has only the most recent update</h4>
@@ -76,31 +93,28 @@
         </div>
         <div class="friends">
             <div style="font-size: 20px;"><span class="material-symbols-rounded">group</span><br>My friends:</div>
-                <a href="https://nerok-web.github.io"><img src="img/nerok_banner.png" class="friends-link" alt="Nerok"/></a>
-                <a href="https://ertorworld.ru"><img src="img/ertorworld.png" class="friends-link" alt="ertorworld"></a>
-                <a href="https://mayplanet.ml"><img src="img/maybanner.png" class="friends-link" alt="maydilsiel"></a>
+                <a href="https://nerok-web.github.io"><img src="assets/image/nerok_banner.png" class="friends-link" alt="Nerok"/></a>
+                <a href="https://ertorworld.ru"><img src="assets/image/ertorworld.png" class="friends-link" alt="ertorworld"></a>
+                <a href="https://mayplanet.ml"><img src="assets/image/maybanner.png" class="friends-link" alt="maydilsiel"></a>
                 <a href="https://lisikpng.com"><img src="http://lisikpng.com/img/baner.png" class="friends-link"></a>
                 <h4 style="padding: 0px;">If you want to be here, write in PM <a href="https://t.me/Windows_Tester" class="link">Telegram</a></h4>
-                <div class="font" style="padding: 0px;">
-                    Current Time:
-                    <span id="clock" class="time"></span>
-                    <p>Time until new year: <span id="demo" class="time"></span></p>
-                    <script src="js/timer.js"></script>
-                </div>
         </div>
     </div>
 </body>
-<footer class="footer" style="text-align: center;">
+<footer style="text-align: center;">
     <div class="font" style="padding: 0px;">
-        <p>Copyright © Windows Tester, 2022 - 2022. Hosted by <a href="https//:github.com" class="link">Github</a></p>
-<textarea disabled="" rows="4" cols="36" name="text">
-You can add link on my website! Use this code!
-<a href="wt-sys.github.io"><img src="https://github.com/wt-sys/wt-sys.github.io/blob/main/img/WT.png" style="border-radius: 10px;" alt="WT"/></a>
-</textarea>
-    <form action="img/WT.png" target="_blank">
-        <button style="padding: 5px; font-size: 10px;">Download button logo file (PNG)</button>
-    </form>
-    </div>
+        <p>Copyright © Windows Tester, 2022 - 2022. Hosted by <a href="https://www.github.com" class="link">Github</a></p>
+        Current Time: <span id="clock" class="time"></span>
+        <p>Time until new year: <span id="demo" class="time"></span></p>
+        <script src="assets/js/timer.js"></script>
+        <input type="text" value='<a href="wt-sys.github.io"><img src="https://github.com/wt-sys/wt-sys.github.io/blob/main/img/WT.png" style="border-radius: 10px;" alt="WT"/></a>' id="myInput">
+        <br>
+        <button style="padding: 5px; font-size: 10px;" onclick="myFunction()">Copy text</button>
+        <br>
+        <br>
+        <form action="assets/image/WT.png" target="_blank">
+            <button style="padding: 5px; font-size: 10px;">Download IMG file for button (PNG)</button>
+        </form>
     </div>
 </footer>
 </html>

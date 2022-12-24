@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Официальный сайт владельца канала Windows Tester">
+    <link rel="shortcut icon" href="../assets/image/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/light.css" media="(prefers-color-scheme: light)">
+    <link rel="stylesheet" href="../assets/css/index.css">
+    <link rel="stylesheet" href="../assets/css/dark.css" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.cdnfonts.com/css/google-sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script>  
+        setInterval(function () {
+            var now = new Date();
+            var clock = document.getElementById("clock");
+            clock.innerHTML = now.toLocaleTimeString();
+        }, 1000);
+    </script>
+    <script>
+        function myFunction() {
+        var copyText = document.getElementById("myInput");
+        copyText.select();
+        document.execCommand("copy");
+        alert("Скопировано!");
+        }
+    </script>
+    <title>Кастомизация</title>
+</head>
+<body>
+    <a class="switch" href="../themes.html" title="Switch Language"><span class="material-symbols-rounded">public</span></a>
+    <nav class="navbar">
+        <div class="navbar__wrap">
+          <div class="hamb">
+            <div class="hamb__field" id="hamb">
+              <span class="bar"></span> <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </div>
+          <ul class="menu" id="menu">
+            <li><a href="index.html" title="Главная страница"><span class="material-symbols-rounded" >home</span> Главная</a></li>
+            <li><a href="changelog.html" title="Тут есть нововведения! :)"><span class="material-symbols-rounded">edit_document</span> Список изменений</a></li>
+            <li><a href="soft.html" title="Программы и прочее"><span class="material-symbols-rounded">computer</span> Программы</a></li>
+            <li><a class="active" href="themes.html" title="Темы, обои и т.д."><span class="material-symbols-rounded">palette</span> Кастомизация</a></li>
+            <li><a href="about.html" title="О проекте"><span class="material-symbols-rounded">account_circle</span> О проекте</a></li>
+            <li><a href="socials.html" title="My Socials"><span class="material-symbols-rounded">link</span> Соц. сети</a></li>
+          </ul>
+        </div>
+  </nav>
+  <div class="popup" id="popup"></div>
+  <script src="../assets/js/nav.js"></script>
+    <div class="header">
+        <div class="font">
+            <span class="material-symbols-rounded" style="font-size: 50px; color: var(--back-color-a1-200)">palette</span>
+            <h1>Кастомизация!</h1>
+            <h4>Тут будут хранится обои, темы и тому подобное!</h4>
+            <h4>Можете отправить свои обои в <a href="https://t.me/Windows_Tester" class="link">Telegram</a></h4>
+            <div class="header-in-header">
+                <span class="material-symbols-rounded" style="font-size: 50px;">photo_library</span><h3>Раздел "Обои"</h3>
+                <form action="https://drive.google.com/file/d/1HZ7AX7H3TnoIUvtMeanCGvhd4MXwcSXs/view?usp=share_link" target="_blank">
+                    <button>Windows 10 Wallpeprs (RTM - 1809) (Nerok)</button>
+                </form>
+                <br>
+                <form action="https://drive.google.com/drive/folders/1mzgyoU5G-sblbJdgX2wCFbYTAWnAHIZ5?usp=share_link" target="_blank">
+                    <button>Обои с моего ПК</button>
+                </form>
+            </div>
+            <div class="header-in-header">
+                <span class="material-symbols-rounded" style="font-size: 50px;">brush</span>
+                <h3>Раздел "Программы для кастомизации"</h3>
+                <div class="form-back">
+                    <h3>Ultra UX Theme Patcher</h3><h4>Программа, редактирующая системные файлы для корректной работы сторонних тем. </h4>
+                    <form action="https://mhoefs.eu/software_uxtheme.php?ref=syssel&lang=en" target="_blank">
+                        <button>Установка с оффициального сайта</button>
+                    </form>
+                </div>
+            </div>
+            <div class="header-in-header">
+                <span class="material-symbols-rounded" style="font-size: 50px;">library_music</span>
+                <h3>Раздел "Музыка"</h3>
+                <h3>На данный момент здесь пусто...</h3>
+            </div>
+            <div class="header-in-header">
+                <span class="material-symbols-rounded" style="font-size: 50px;">Music_note</span>
+                <h3>Раздел "Звуки систем"</h3>
+                <form action="https://drive.google.com/file/d/1XzKQEx84ubZ4Op2C9N7Ol2q77VzabXDZ/view?usp=share_link" target="_blank">
+                    <button>Windows 11 Sounds</button>
+                </form>
+            </div>
+        </div>
+        <div class="friends">
+            <div style="font-size: 20px;"><span class="material-symbols-rounded">group</span><br>Мои друзья:</div>
+                <br>
+                <a href="https://nerok-web.github.io"><img src="../assets/image/nerok_banner.png" class="friends-link" alt="Nerok"/></a>
+                <a href="https://ertorworld.ru"><img src="../assets/image/ertorworld.png" class="friends-link" alt="ertorworld"></a>
+                <a href="https://mayplanet.ml"><img src="../assets/image/maybanner.png" class="friends-link" alt="maydilsiel"></a>
+                <a href="https://lisikpng.com"><img src="http://lisikpng.com/img/baner.png" class="friends-link"></a>
+                <h4 style="padding: 0px;">Хочешь быть здесь, пиши в ЛС <a href="https://t.me/Windows_Tester" class="link">Telegram</a></h4>
+            </div>
+        </div>
+    </div>
+</body>
+<footer style="text-align: center;">
+    <div class="font" style="padding: 0px;">
+        <p>Copyright © Windows Tester, 2022 - 2022. Источник хостинга - <a href="https://www.github.com" class="link">Github</a></p>
+        Текущее время: <span id="clock" class="time"></span>
+        <p>Время до нового года: <span id="demo" class="time"></span></p>
+        <script src="../assets/js/timer_ru.js"></script>
+        <input type="text" value='<a href="wt-sys.github.io"><img src="https://github.com/wt-sys/wt-sys.github.io/blob/main/img/WT.png" style="border-radius: 10px;" alt="WT"/></a>' id="myInput">
+        <br>
+        <button style="padding: 5px; font-size: 10px;" onclick="myFunction()">Copy text</button>
+        <br>
+        <br>
+        <form action="../assets/image/WT.png" target="_blank">
+            <button style="padding: 5px; font-size: 10px;">Скачать картинку для кнопки (PNG)</button>
+        </form>
+    </div>
+</footer>
+</html>

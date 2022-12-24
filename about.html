@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Here you can find out about the project, who created it and everything like that!">
-    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles/light.css" media="(prefers-color-scheme: light)">
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/dark.css" media="(prefers-color-scheme: dark)">
+    <meta name="description" content="Here you can find out about the project, who created it and everything like that!"><link rel="shortcut icon" href="assets/image/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/light.css" media="(prefers-color-scheme: light)">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/dark.css" media="(prefers-color-scheme: dark)">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.cdnfonts.com/css/google-sans" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -21,6 +20,15 @@
             var clock = document.getElementById("clock");
             clock.innerHTML = now.toLocaleTimeString();
         }, 1000);
+    </script>
+    <script>
+        function myFunction() {
+        var copyText = document.getElementById("myInput");
+        copyText.select();
+        document.execCommand("copy");
+        alert("Copied!" // + copyText.value
+        );
+        }
     </script>
     <title>About project</title>
 </head>
@@ -45,72 +53,60 @@
         </div>
   </nav>
   <div class="popup" id="popup"></div>
-  <script src="js/scrip.js"></script>
+  <script src="assets/js/nav.js"></script>
     <div class="header">
         <div class="font">
             <span class="material-symbols-rounded" style="font-size: 50px; color: var(--back-color-a1-200)">account_circle</span>
             <h1>About the project and creator:</h1>
             <div class="header-in-header">
-            <div>
-            <div class="about">
-            <a href="https://www.youtube.com/channel/UC6wNi6iQFVSnd-eJivuG3_Q"><img src="styles/logo.png" class="about-mini" weight="140" height="140" align="left"></a>
-            <br>
-            <h1>Created by Windows Tester</h1><br>
-            Website created in Visual Studio Code<br>
-            Helped me<br>
-            <a href="https://nerok-web.github.io" class="link">Nerok</a> and
-            <a href="beta.mayplanet.ml" class="link">Maydilsiel</a>
-            <br><br><br>
-            </div></a><br><br>
-                <div class="about2">
-                <img src="styles/VMware_Workstation_11.0_icon.png" class="about-mini2" weight="140" height="140">
-                <br>
-                <h1>I'm using</h1><br>
-                Virtual machine: VMware Workstation 12<br>
-                Video editing software: Wondershare Filmora X<br>
-                Video recording software: Bandicam
-                <br><br><br>
-                </div><br><br>
+                <div class="grid">
+                    <div class="about1">
+                        <div class="about-text" style="color: var(--back-color-a1-200); text-shadow: 0px 0px 5px var(--back-color-a1-200);">Who created?</div>
+                        <p>Created by Windows Tester</p>
+                        <p>The site was made in Visual Studio Code</p>
+                        <p>Helped me: <a class="link" href="https://nerok-web.github.io">Nerok</a> & <a class="link" href="https://mayplanet.ml">Maydilsiel</a></p>
+                    </div>
+                    <div class="about2">
+                        <div class="about-text">My PC</div>
+                        <p>CPU: Intel Core 2 QUAD (2.40 GHz)</p>
+                        <p>GPU: NVIDIA GeForce 9500 GT (1 GB)</p>
+                        <p>RAM: 4 GB DDR3</p>
+                        <p>Motherboard: G41MT-S2PT</p>
+                        <p>ОС: Windows 11 (ReviOS)</p>
+                    </div>
                     <div class="about3">
-                    <img src="styles/this_pc.png" class="about-mini3" weight="140" height="140" align="left">
-                    <br>
-                    <h1>My PC:</h1><br>
-                    CPU: Intel Core 2 Quad (2.40 GHz)<br>
-                    RAM: 4GB DDR3<br>
-                    GPU: NVIDIA Geforce 9500 GT 1GB<br>
-                    Motherboard: G41MT-S2PT
-                    <br><br><br>
-                    </div><br><br>
+                        <div class="about-text" style="color: var(--back-color-a1-200); text-shadow: 0px 0px 5px var(--back-color-a1-200);">Tools for tests</div>
+                        <p>Virtual Machine: VMware Workstation 12</p>
+                        <p>Editing software: Wondershare Filmora 11</p>
+                        <p>Recording software: Bandicam</p>
+                    </div>
+                </div>
             </div>
-        </div>
         </div>
         <div class="friends">
             <div style="font-size: 20px;"><span class="material-symbols-rounded">group</span><br>My friends:</div>
-                <a href="https://nerok-web.github.io"><img src="img/nerok_banner.png" class="friends-link" alt="Nerok"/></a>
-                <a href="https://ertorworld.ru"><img src="img/ertorworld.png" class="friends-link" alt="ertorworld"></a>
-                <a href="https://mayplanet.ml"><img src="img/maybanner.png" class="friends-link" alt="maydilsiel"></a>
+                <a href="https://nerok-web.github.io"><img src="assets/image/nerok_banner.png" class="friends-link" alt="Nerok"/></a>
+                <a href="https://ertorworld.ru"><img src="assets/image/ertorworld.png" class="friends-link" alt="ertorworld"></a>
+                <a href="https://mayplanet.ml"><img src="assets/image/maybanner.png" class="friends-link" alt="maydilsiel"></a>
                 <a href="https://lisikpng.com"><img src="http://lisikpng.com/img/baner.png" class="friends-link"></a>
                 <h4 style="padding: 0px;">If you want to be here, write in PM <a href="https://t.me/Windows_Tester" class="link">Telegram</a></h4>
-                <div class="font" style="padding: 0px;">
-                    Current Time:
-                    <span id="clock" class="time"></span>
-                    <p>Time until new year: <span id="demo" class="time"></span></p>
-                    <script src="js/timer.js"></script>
-                </div>
         </div>
     </div>
 </body>
-<footer class="footer" style="text-align: center;">
+<footer style="text-align: center;">
     <div class="font" style="padding: 0px;">
-        <p>Copyright © Windows Tester, 2022 - 2022. Hosted by <a href="https//:github.com" class="link">Github</a></p>
-<textarea disabled="" rows="4" cols="36" name="text">
-You can add link on my website! Use this code!
-<a href="wt-sys.github.io"><img src="https://github.com/wt-sys/wt-sys.github.io/blob/main/img/WT.png" style="border-radius: 10px;" alt="WT"/></a>
-</textarea>
-    <form action="img/WT.png" target="_blank">
-        <button style="padding: 5px; font-size: 10px;">Download button logo file (PNG)</button>
-    </form>
-    </div>
+        <p>Copyright © Windows Tester, 2022 - 2022. Hosted by <a href="https://www.github.com" class="link">Github</a></p>
+        Current Time: <span id="clock" class="time"></span>
+        <p>Time until new year: <span id="demo" class="time"></span></p>
+        <script src="assets/js/timer.js"></script>
+        <input type="text" value='<a href="wt-sys.github.io"><img src="https://github.com/wt-sys/wt-sys.github.io/blob/main/img/WT.png" style="border-radius: 10px;" alt="WT"/></a>' id="myInput">
+        <br>
+        <button style="padding: 5px; font-size: 10px;" onclick="myFunction()">Copy text</button>
+        <br>
+        <br>
+        <form action="assets/image/WT.png" target="_blank">
+            <button style="padding: 5px; font-size: 10px;">Download IMG file for button (PNG)</button>
+        </form>
     </div>
 </footer>
 </html>
