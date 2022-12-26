@@ -394,6 +394,7 @@ textarea {
     transition: all 0.5s;
 }
 .about1:hover {
+    background-size: auto 210%;
     box-shadow: 8px 8px 0px var(--back-color-n2-800);
     transition: all 0.5s;
 }
@@ -409,6 +410,7 @@ textarea {
     transition: all 0.5s;
 }
 .about2:hover {
+    background-size: auto 210%;
     box-shadow: 8px 8px 0px var(--back-color-n2-800);
     transition: all 0.5s;
 }
@@ -423,6 +425,7 @@ textarea {
     transition: all 0.5s;
 }
 .about3:hover {
+    background-size: auto 210%;
     box-shadow: 8px 8px 0px var(--back-color-n2-800);
     transition: all 0.5s;
 }
@@ -432,7 +435,6 @@ textarea {
     text-shadow: 0px 0px 5px var(--back-color-a3-200);
     color: var(--back-color-a3-200);
 }
-
 .home-link {
     padding: 15px 20px 15px 20px;
     border-radius: 10px;
@@ -444,6 +446,7 @@ textarea {
     transition: all 0.5s;
 }
 .home-link:hover {
+    background-size: auto 210%;
     box-shadow: 8px 8px 0px var(--back-color-n2-800);
     transition: all 0.5s;
 }
@@ -459,6 +462,7 @@ textarea {
     transition: all 0.5s;
 }
 .home-link2:hover {
+    background-size: auto 610%;
     box-shadow: 8px 8px 0px var(--back-color-n2-800);
     transition: all 0.5s;
 }
@@ -473,6 +477,7 @@ textarea {
     transition: all 0.5s;
 }
 .home-link3:hover {
+    background-size: auto 210%;
     box-shadow: 8px 8px 0px var(--back-color-n2-800);
     transition: all 0.5s;
 }
@@ -488,6 +493,7 @@ textarea {
     transition: all 0.5s;
 }
 .home-link4:hover {
+    background-size: auto 410%;
     box-shadow: 8px 8px 0px var(--back-color-n2-800);
     transition: all 0.5s;
 }
