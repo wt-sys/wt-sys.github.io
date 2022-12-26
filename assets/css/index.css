@@ -504,6 +504,13 @@ textarea {
     grid-column-gap: 40px;
     grid-row-gap: 1em;
 }
+.grid-about {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(280px, 1fr));
+    grid-column-gap: 40px;
+    grid-row-gap: 1em;
+}
 img:hover {
     animation: shake 1s;
     animation-iteration-count: infinite;
@@ -561,6 +568,9 @@ input:hover {
     }
     .about-text {
         font-size: 24px;
+    }
+    .grid-about {
+        grid-template-columns: repeat(1, minmax(240px, 1fr));
     }
     .grid {
         grid-template-columns: repeat(1, minmax(240px, 1fr));
