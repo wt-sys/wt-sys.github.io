@@ -7,9 +7,9 @@ html, body {
 }
 .header {
     background-color: var(--back-color-n2-800);
-    border-radius: 10px;
+    border-radius: 15px;
     margin: 8px;
-    padding: 80px 50px 50px 50px;
+    padding: 50px 50px 50px 50px;
     border-bottom: 3px var(--back-color-a2-200) solid;
 }
 body {
@@ -23,13 +23,18 @@ body::-webkit-scrollbar {
     width: 10px;
 }
 body::-webkit-scrollbar-track {
-    border-radius: 10px;
+    border-radius:  5px 0 0 5px;
     background: var(--back-color-a2-100);
 }
 body::-webkit-scrollbar-thumb {
     background-color: var(--back-color-a2-900);
-    border-radius: 10px;
+    border-radius: 5px;
     border: 3px solid var(--back-color-a2-100);
+    transition: all 0.5s;
+}
+body::-webkit-scrollbar-thumb:hover {
+    background-color: var(--back-color-a2-700);
+    transition: all 0.5s;
 }
 @media only screen and (max-width: 800px) {
     .yt {
@@ -46,7 +51,7 @@ body::-webkit-scrollbar-thumb {
         height: 50%;
     }
 }
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1001px) {
     body {
         font-size: 120%
     }
@@ -56,37 +61,40 @@ body::-webkit-scrollbar-thumb {
     }
 }
 .navbar {
-    animation: nav 5s;
-    animation-iteration-count: infinite;
     backdrop-filter: blur(5px);
     background-color: var(--back-blur);
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 15px 15px 0px 0px;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
     display: flex;
     position: fixed;
-    top: 37px;
+    top: calc(100% + 25px);
     padding: 0;
     font-size: 20px;
-    color: var(--back-font-header-top-color);
-    border-bottom: 3px var(--back-color-a1-100) solid;
+    border-top: 3px var(--back-color-a3-200) solid;
     overflow: auto;
     box-shadow: 0px 10px 15px var(--back-box-shadow);
     transition: all 0.2s;
 }
+.navbar:hover {
+    animation: nav 5s;
+    animation-iteration-count: infinite;
+    background-color: var(--back-color-a1-600);
+    top: calc(100% - 37px);
+}
 @keyframes nav {
-    90% { border-bottom: 3px red solid; box-shadow: 0px 10px 15px rgba(255, 0, 0, 0.325);}
-    10% { border-bottom: 3px orange solid; box-shadow: 0px 10px 15px rgba(255, 166, 0, 0.325);}
-    20% { border-bottom: 3px yellow solid; box-shadow: 0px 10px 15px rgba(255, 255, 0, 0.325);}
-    50% { border-bottom: 3px greenyellow solid; box-shadow: 0px 10px 15px rgba(172, 255, 47, 0.325);}
-    40% { border-bottom: 3px lime solid; box-shadow: 0px 10px 15px rgba(0, 255, 0, 0.325);}
-    30% { border-bottom: 3px cyan solid; box-shadow: 0px 10px 15px rgba(0, 255, 255, 0.325);}
-    0% { border-bottom: 3px lightcyan solid; box-shadow: 0px 10px 15px rgba(173, 216, 230, 0.325);}
-    60% { border-bottom: 3px blue solid; box-shadow: 0px 10px 15px rgba(0, 0, 255, 0.325);}
-    80% { border-bottom: 3px purple solid; box-shadow: 0px 10px 15px rgba(128, 0, 128, 0.325);}
-    70% { border-bottom: 3px violet solid; box-shadow: 0px 10px 15px rgba(238, 130, 238, 0.325);}
-    100% { border-bottom: 3px var(--back-color-a1-100) solid; box-shadow: 0px 10px 15px var(--back-box-shadow);}
+    90% { border-top: 3px red solid; box-shadow: 0px -10px 15px rgba(255, 0, 0, 0.325);}
+    10% { border-top: 3px orange solid; box-shadow: 0px -10px 15px rgba(255, 166, 0, 0.325);}
+    20% { border-top: 3px yellow solid; box-shadow: 0px -10px 15px rgba(255, 255, 0, 0.325);}
+    50% { border-top: 3px greenyellow solid; box-shadow: 0px -10px 15px rgba(172, 255, 47, 0.325);}
+    40% { border-top: 3px lime solid; box-shadow: 0px -10px 15px rgba(0, 255, 0, 0.325);}
+    30% { border-top: 3px cyan solid; box-shadow: 0px -10px 15px rgba(0, 255, 255, 0.325);}
+    0% { border-top: 3px lightcyan solid; box-shadow: 0px -10px 15px rgba(173, 216, 230, 0.325);}
+    60% { border-top: 3px blue solid; box-shadow: 0px -10px 15px rgba(0, 0, 255, 0.325);}
+    80% { border-top: 3px purple solid; box-shadow: 0px -10px 15px rgba(128, 0, 128, 0.325);}
+    70% { border-top: 3px violet solid; box-shadow: 0px -10px 15px rgba(238, 130, 238, 0.325);}
+    100% { border-top: 3px var(--back-color-a1-100) solid; box-shadow: 0px 10px 15px var(--back-box-shadow);}
 }
 .menu {
     text-align: center;
@@ -100,7 +108,7 @@ body::-webkit-scrollbar-thumb {
 }
 .menu li a{
     margin: 10px;
-    display: flex;   
+    display: flex;
     border-radius: 10px;
     background-color: var(--back-color-a1-700);
     color: var(--back-color-a1-50);
@@ -175,7 +183,7 @@ nav ul li a {
     padding: 20px;
     border-bottom: 3px var(--back-color-a1-800) solid;
     font-size: 20px;
-    transition: all 0.5s;
+    transition: all 0.2s;
 }
 .switch:hover {
     border-radius: 15px;
@@ -184,7 +192,12 @@ nav ul li a {
     border-bottom: 3px var(--back-color-a1-200) solid;
     background-color: var(--back-color-a1-800);
     color: var(--back-color-a1-200);
-    transition: all 0.5s;
+    transition: all 0.2s;
+    animation-duration: 5s;
+}
+.switch:hover:after {
+    transition: 0.2s;
+    content: 'Switch language';
 }
 .switch:active {
     border-bottom: 3px var(--back-color-a1-200) solid;
@@ -193,18 +206,55 @@ nav ul li a {
     color: var(--back-color-a1-200);
     transition: all 0.5s;
 }
+.switch-ru {
+    animation: switch 5s;
+    animation-iteration-count: infinite;
+    border-radius: 50px;
+    text-decoration: none;
+    color: var(--back-color-a1-800);
+    display: flex;
+    background-color: var(--back-color-a1-200);
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    padding: 20px;
+    border-bottom: 3px var(--back-color-a1-800) solid;
+    font-size: 20px;
+    transition: all 0.2s;
+}
+.switch-ru:hover {
+    border-radius: 15px;
+    animation: switch 5s;
+    animation-iteration-count: infinite;
+    border-bottom: 3px var(--back-color-a1-200) solid;
+    background-color: var(--back-color-a1-800);
+    color: var(--back-color-a1-200);
+    transition: all 0.2s;
+    animation-duration: 5s;
+}
+.switch-ru:hover:after {
+    transition: 0.2s;
+    content: 'Сменить язык';
+}
+.switch-ru:active {
+    border-bottom: 3px var(--back-color-a1-200) solid;
+    background-color: var(--back-color-a1-700);
+    text-shadow: 0 0 5px var(--back-color-a1-300);
+    color: var(--back-color-a1-200);
+    transition: all 0.5s;
+}
 @keyframes switch {
-    90% { border-bottom: 3px red solid; box-shadow: 0px 10px 15px rgba(255, 0, 0, 0.325);}
-    10% { border-bottom: 3px orange solid; box-shadow: 0px 10px 15px rgba(255, 166, 0, 0.325);}
-    20% { border-bottom: 3px yellow solid; box-shadow: 0px 10px 15px rgba(255, 255, 0, 0.325);}
-    50% { border-bottom: 3px greenyellow solid; box-shadow: 0px 10px 15px rgba(172, 255, 47, 0.325);}
-    40% { border-bottom: 3px lime solid; box-shadow: 0px 10px 15px rgba(0, 255, 0, 0.325);}
-    30% { border-bottom: 3px cyan solid; box-shadow: 0px 10px 15px rgba(0, 255, 255, 0.325);}
-    0% { border-bottom: 3px lightcyan solid; box-shadow: 0px 10px 15px rgba(173, 216, 230, 0.325);}
-    60% { border-bottom: 3px blue solid; box-shadow: 0px 10px 15px rgba(0, 0, 255, 0.325);}
-    80% { border-bottom: 3px purple solid; box-shadow: 0px 10px 15px rgba(128, 0, 128, 0.325);}
-    70% { border-bottom: 3px violet solid; box-shadow: 0px 10px 15px rgba(238, 130, 238, 0.325);}
-    100% { border-bottom: 3px var(--back-color-a1-100) solid; box-shadow: 0px 10px 15px var(--back-box-shadow);}
+    90% { border-bottom: 1px red solid; box-shadow: 0px 10px 15px rgba(255, 0, 0, 0.325);}
+    10% { border-bottom: 1px orange solid; box-shadow: 0px 10px 15px rgba(255, 166, 0, 0.325);}
+    20% { border-bottom: 1px yellow solid; box-shadow: 0px 10px 15px rgba(255, 255, 0, 0.325);}
+    50% { border-bottom: 1px greenyellow solid; box-shadow: 0px 10px 15px rgba(172, 255, 47, 0.325);}
+    40% { border-bottom: 1px lime solid; box-shadow: 0px 10px 15px rgba(0, 255, 0, 0.325);}
+    30% { border-bottom: 1px cyan solid; box-shadow: 0px 10px 15px rgba(0, 255, 255, 0.325);}
+    0% { border-bottom: 1px lightcyan solid; box-shadow: 0px 10px 15px rgba(173, 216, 230, 0.325);}
+    60% { border-bottom: 1px blue solid; box-shadow: 0px 10px 15px rgba(0, 0, 255, 0.325);}
+    80% { border-bottom: 1px purple solid; box-shadow: 0px 10px 15px rgba(128, 0, 128, 0.325);}
+    70% { border-bottom: 1px violet solid; box-shadow: 0px 10px 15px rgba(238, 130, 238, 0.325);}
+    100% { border-bottom: 1px var(--back-color-a1-100) solid; box-shadow: 0px 10px 15px var(--back-box-shadow);}
 }
 button {
     animation: button 5s;
@@ -224,7 +274,7 @@ button {
     border-bottom: 3px var(--back-color-a1-800) solid;
 }
 button:hover {
-    border-radius: 6px;
+    border-radius: 15px;
     animation: button 5s;
     animation-iteration-count: infinite;
     color: var(--back-color-a3-800);
@@ -257,21 +307,21 @@ h2 {
 }
 footer {
     margin: 8px;
-    padding: 10px;
+    padding: 10px 10px 70px 10px ;
     background-image: linear-gradient(to top, var(--back-color-a1-800), var(--back-color-n2-800));
-    border-radius: 10px;
+    border-radius: 15px;
     transition: all 1s;
     border-bottom: 3px var(--back-color-a1-200) solid;
 }
 .yt {
     margin: 25px;
-    border-radius: 10px;
+    border-radius: 12px;
     box-shadow: 5px 5px 0px var(--back-color-n2-800);
     transition: all 0.5s;
 }
 .yt:hover {
-    border-radius: 10px;
-    box-shadow: 8px 8px 0px var(--back-color-n2-800);
+    border-radius: 15px;
+    box-shadow: 8px 8px 5px var(--back-color-n2-800);
     transition: all 0.5s;
 }
 .time {
@@ -289,7 +339,7 @@ footer {
 }
 .header-in-header {
     background-color: var(--back-color-a1-600);
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 25px;
     transition: all 1s;
     margin-top: 10px;
@@ -298,7 +348,7 @@ footer {
 }
 .header-in-home {
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0), var(--back-color-a1-700)), url('../image/YouTube.png');
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 25px;
     margin-top: 10px;
     box-shadow: 0 0 10px var(--back-color-a1-200);
@@ -310,27 +360,27 @@ footer {
     transition: all 0.5s;
 }
 @keyframes button {
-    90% { border-bottom: 3px red solid; box-shadow: 0px 10px 15px rgba(255, 0, 0, 0.325);}
-    10% { border-bottom: 3px orange solid; box-shadow: 0px 10px 15px rgba(255, 166, 0, 0.325);}
-    20% { border-bottom: 3px yellow solid; box-shadow: 0px 10px 15px rgba(255, 255, 0, 0.325);}
-    50% { border-bottom: 3px greenyellow solid; box-shadow: 0px 10px 15px rgba(172, 255, 47, 0.325);}
-    40% { border-bottom: 3px lime solid; box-shadow: 0px 10px 15px rgba(0, 255, 0, 0.325);}
-    30% { border-bottom: 3px cyan solid; box-shadow: 0px 10px 15px rgba(0, 255, 255, 0.325);}
-    0% { border-bottom: 3px lightcyan solid; box-shadow: 0px 10px 15px rgba(173, 216, 230, 0.325);}
-    60% { border-bottom: 3px blue solid; box-shadow: 0px 10px 15px rgba(0, 0, 255, 0.325);}
-    80% { border-bottom: 3px purple solid; box-shadow: 0px 10px 15px rgba(128, 0, 128, 0.325);}
-    70% { border-bottom: 3px violet solid; box-shadow: 0px 10px 15px rgba(238, 130, 238, 0.325);}
-    100% { border-bottom: 3px var(--back-color-a1-100) solid; box-shadow: 0px 10px 15px var(--back-box-shadow);}
+    90% { border-bottom: 1px red solid; box-shadow: 0px 10px 15px rgba(255, 0, 0, 0.325);}
+    10% { border-bottom: 1px orange solid; box-shadow: 0px 10px 15px rgba(255, 166, 0, 0.325);}
+    20% { border-bottom: 1px yellow solid; box-shadow: 0px 10px 15px rgba(255, 255, 0, 0.325);}
+    50% { border-bottom: 1px greenyellow solid; box-shadow: 0px 10px 15px rgba(172, 255, 47, 0.325);}
+    40% { border-bottom: 1px lime solid; box-shadow: 0px 10px 15px rgba(0, 255, 0, 0.325);}
+    30% { border-bottom: 1px cyan solid; box-shadow: 0px 10px 15px rgba(0, 255, 255, 0.325);}
+    0% { border-bottom: 1px lightcyan solid; box-shadow: 0px 10px 15px rgba(173, 216, 230, 0.325);}
+    60% { border-bottom: 1px blue solid; box-shadow: 0px 10px 15px rgba(0, 0, 255, 0.325);}
+    80% { border-bottom: 1px purple solid; box-shadow: 0px 10px 15px rgba(128, 0, 128, 0.325);}
+    70% { border-bottom: 1px violet solid; box-shadow: 0px 10px 15px rgba(238, 130, 238, 0.325);}
+    100% { border-bottom: 1px var(--back-color-a1-100) solid; box-shadow: 0px 10px 15px var(--back-box-shadow);}
 }
 .form-back {
     padding: 10px;
     background-color: var(--back-color-a1-700);
-    border-radius: 10px;
+    border-radius: 15px;
 }
 .friends {
     padding: 8px;
     background-color: var(--back-color-a1-600);
-    border-radius: 10px;
+    border-radius: 15px;
     margin: 20px;
     text-align: center;
     color: var(--back-color-a2-100);
@@ -341,7 +391,7 @@ footer {
 .friends-link {
     width: 88px;
     height: 31px;
-    border-radius: 5px;
+    border-radius: 6px;
     border: 3px var(--back-color-a3-200) dotted;
     transition: all 0.5s;
 }
@@ -375,17 +425,9 @@ footer {
     90% { transform: translate(1px, -2px) rotate(-1deg); }
     100% { transform: translate(1px, 2px) rotate(0deg); }
 }
-textarea {
-    resize: none;
-    background-color: var(--back-color-all-0);
-    color: var(--back-color-all-1);
-    border-radius: 5px;
-    border-bottom: 3px var(--back-color-all-1) solid;
-    width: 50%;
-}
 .about1 {
     padding: 15px 20px 15px 20px;
-    border-radius: 10px;
+    border-radius: 15px;
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0), var(--back-color-a1-700)), url('../image/baner_yt.png');
     background-position: center;
     background-size: auto 200%;
@@ -395,13 +437,13 @@ textarea {
 }
 .about1:hover {
     background-size: auto 210%;
-    box-shadow: 8px 8px 0px var(--back-color-n2-800);
+    box-shadow: 8px 8px 5px var(--back-color-n2-800);
     transition: all 0.5s;
 }
 .about2 {
     color: var(--back-color-a3-50);
     padding: 15px 20px 15px 20px;
-    border-radius: 10px;
+    border-radius: 15px;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--back-color-a3-700)), url('../image/pc.png');
     background-position: center;
     background-size: auto 200%;
@@ -411,12 +453,12 @@ textarea {
 }
 .about2:hover {
     background-size: auto 210%;
-    box-shadow: 8px 8px 0px var(--back-color-n2-800);
+    box-shadow: 8px 8px 5px var(--back-color-n2-800);
     transition: all 0.5s;
 }
 .about3 {
     padding: 15px 20px 15px 20px;
-    border-radius: 10px;
+    border-radius: 15px;
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0), var(--back-color-a1-700)), url('../image/soft.png');
     background-position: center;
     background-size: auto 200%;
@@ -426,7 +468,7 @@ textarea {
 }
 .about3:hover {
     background-size: auto 210%;
-    box-shadow: 8px 8px 0px var(--back-color-n2-800);
+    box-shadow: 8px 8px 5px var(--back-color-n2-800);
     transition: all 0.5s;
 }
 .about-text {
@@ -437,7 +479,7 @@ textarea {
 }
 .home-link {
     padding: 15px 20px 15px 20px;
-    border-radius: 10px;
+    border-radius: 15px;
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0), var(--back-color-a1-700)), url('../image/soft.png');
     background-position: center;
     background-size: auto 200%;
@@ -447,13 +489,13 @@ textarea {
 }
 .home-link:hover {
     background-size: auto 210%;
-    box-shadow: 8px 8px 0px var(--back-color-n2-800);
+    box-shadow: 8px 8px 5px var(--back-color-n2-800);
     transition: all 0.5s;
 }
 .home-link2 {
     color: var(--back-color-a3-50);
     padding: 15px 20px 15px 20px;
-    border-radius: 10px;
+    border-radius: 15px;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--back-color-a3-700)), url('../image/custom.png');
     background-position: center;
     background-size: auto 600%;
@@ -463,12 +505,12 @@ textarea {
 }
 .home-link2:hover {
     background-size: auto 610%;
-    box-shadow: 8px 8px 0px var(--back-color-n2-800);
+    box-shadow: 8px 8px 5px var(--back-color-n2-800);
     transition: all 0.5s;
 }
 .home-link3 {
     padding: 15px 20px 15px 20px;
-    border-radius: 10px;
+    border-radius: 15px;
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0), var(--back-color-a1-700)), url('../image/baner_yt.png');
     background-position: center;
     background-size: auto 200%;
@@ -478,61 +520,50 @@ textarea {
 }
 .home-link3:hover {
     background-size: auto 210%;
-    box-shadow: 8px 8px 0px var(--back-color-n2-800);
+    box-shadow: 8px 8px 5px var(--back-color-n2-800);
     transition: all 0.5s;
 }
 .home-link4 {
     color: var(--back-color-a3-50);
     padding: 15px 20px 15px 20px;
-    border-radius: 10px;
+    border-radius: 15px;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--back-color-a3-700)), url('../image/socials.png');
     background-position: center;
-    background-size: auto 400%;
+    background-size: auto 380%;
     margin: 0px -8px 0px -8px;
     box-shadow: 5px 5px 0px var(--back-color-n2-800);
     transition: all 0.5s;
 }
 .home-link4:hover {
     background-size: auto 410%;
-    box-shadow: 8px 8px 0px var(--back-color-n2-800);
+    box-shadow: 8px 8px 5px var(--back-color-n2-800);
     transition: all 0.5s;
 }
 .grid {
     padding: 20px;
     display: grid;
-    grid-template-columns: repeat(2, minmax(280px, 1fr));
+    grid-template-columns: repeat(2, minmax(125px, 1fr));
     grid-column-gap: 40px;
     grid-row-gap: 1em;
 }
 .grid-about {
     padding: 20px;
     display: grid;
-    grid-template-columns: repeat(3, minmax(280px, 1fr));
+    grid-template-columns: repeat(3, minmax(125px, 1fr));
     grid-column-gap: 40px;
     grid-row-gap: 1em;
 }
-img:hover {
-    animation: shake 1s;
-    animation-iteration-count: infinite;
-}
-@keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, -2px) rotate(-1deg); }
-    100% { transform: translate(1px, 2px) rotate(0deg); }
+.grid-apps {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(125px, 1fr));
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
 }
 .navbar-left {
     display: block;
 }
 input {
-    border-radius: 5px;
+    border-radius: 7px;
     text-align: center;
     width: 820px;
     font-family: 'Times New Roman', Times, serif;
@@ -547,6 +578,61 @@ input:hover {
     background-color: var(--back-color-a2-900);
     border-bottom: solid 2px var(--back-color-a1-200);
     transition: all 0.2s;
+}
+.welcome-text-en {
+    margin: 25.728px 0;
+    font-size: 38.4px;
+    font-weight: bold;
+    color: var(--back-color-a1-200);
+}
+.welcome-text-en:after {
+    content: 'Welcome :)';
+    animation: hi 4s linear;
+}
+@keyframes hi {
+    0% {content: 'W';}
+    10% {content: 'We'}
+    20% {content: 'Wel'}
+    30% {content: 'Welc'}
+    40% {content: 'Welco'}
+    50% {content: 'Welcom'}
+    60% {content: 'Welcome'}
+    70% {content: 'Welcome '}
+    80% {content: 'Welcome :)'}
+    90% {content: 'Welcome'}
+}
+.welcome-text-ru {
+    margin: 25.728px 0;
+    font-size: 38.4px;
+    font-weight: bold;
+    color: var(--back-color-a1-200);
+}
+.welcome-text-ru:after {
+    content: 'Добро пожаловать :)';
+    animation: hi-ru 5s linear;
+}
+@keyframes hi-ru {
+    0% {content: 'Д'}
+    5% {content: 'До'}
+    10% {content: 'Доб'}
+    15% {content: 'Добр'}
+    20% {content: 'Добро'}
+    25% {content: 'Добро '}
+    30% {content: 'Добро п'}
+    35% {content: 'Добро по'}
+    40% {content: 'Добро пож'}
+    45% {content: 'Добро пожа'}
+    50% {content: 'Добро пожал'}
+    55% {content: 'Добро пожало'}
+    60% {content: 'Добро пожалов'}
+    65% {content: 'Добро пожалова'}
+    70% {content: 'Добро пожаловат'}
+    75% {content: 'Добро пожаловать'}
+    80% {content: 'Добро пожаловать '}
+    85% {content: 'Добро пожаловать :)'}
+    90% {content: 'Добро пожаловать '}
+    95% {content: 'Добро пожаловать :)'}
+    100% {content: 'Добро пожаловать '}
 }
 @media (min-width: 768px) {
     nav {
@@ -563,6 +649,9 @@ input:hover {
     }
 }
 @media (max-width: 1000px) {
+    .grid-apps {
+        grid-template-columns: repeat(1, minmax(110px, 1fr));
+    }
     input {
         width: calc(100% - 10px);
     }
@@ -603,6 +692,7 @@ input:hover {
         padding: 0;
     }
     .navbar {
+        border-top: none;
         border-radius: 0px 0px 5px 5px;
         border-bottom: 3px var(--back-color-a1-800) solid;
         left: 0;
@@ -612,6 +702,8 @@ input:hover {
         transform: translate(0%, 0%);
     }
     .navbar:hover {
+        border-top: none;
+        top: 0;
         border-radius: 0px 0px 10px 10px;
         border-bottom: 3px var(--back-color-a1-200) solid;
         background-color: var(--back-color-a1-800);
