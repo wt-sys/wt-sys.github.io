@@ -59,6 +59,23 @@
     --back-color-n2-700: #ababae;
     --back-color-n2-800: #e3e2e6;
     --back-color-n2-900: #c6c6ca;
+    /*Error colors*/
+    --back-error0: #ffffff;
+    --back-error10: #fffbff;
+    --back-error20: #fff8f7;
+    --back-error25: #ffedea;
+    --back-error30: #ffdad6;
+    --back-error35: #ffb4ab;
+    --back-error40: #ff897d;
+    --back-error50: #ff5449;
+    --back-error60: #de3730;
+    --back-error70: #ba1a1a;
+    --back-error80: #a80710;
+    --back-error90: #93000a;
+    --back-error95: #7e0007;
+    --back-error98: #690005;
+    --back-error99: #410002;
+    --back-error100: #000000; 
     /*Other*/
     --back-box-shadow: rgb(0 0 0 / 35%);
     --back-blur: #d2e4ff70;

@@ -134,10 +134,10 @@ body::-webkit-scrollbar-thumb:hover {
 .menu li a:active {
     display: flex;
     border-radius: 20px;
-    background-color: var(--back-color-a3-300);
-    color: var(--back-color-a3-800);
+    background-color: var(--back-error80);
+    color: var(--back-error20);
     top: 0;
-    text-shadow: 0 0 5px var(--back-color-a3-600);
+    text-shadow: 0 0 5px var(--back-error60);
     transition: all 0.2s;
 }
 nav ul {
@@ -284,12 +284,12 @@ button:hover {
     border-bottom: 3px var(--back-color-a3-800) solid;
 }
 button:active {
-    color: var(--back-color-a3-800);
-    background-color: var(--back-color-a3-300);
+    color: var(--back-error20);
+    background-color: var(--back-error80);
     box-shadow: 0 5px 10px var(--back-hover-button-soft);
-    text-shadow: 0 0 5px var(--back-color-a3-600);
+    text-shadow: 0 0 5px var(--back-error60);
     transition: all 0.2s;
-    border-bottom: 3px var(--back-color-a3-800) solid;
+    border-bottom: 3px var(--back-error20) solid;
 }
 .font {
     color: var(--back-color-a2-100);
@@ -498,7 +498,7 @@ footer {
     border-radius: 15px;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--back-color-a3-700)), url('../image/custom.png');
     background-position: center;
-    background-size: auto 600%;
+    background-size: auto 580%;
     margin: 0px -8px 0px -8px;
     box-shadow: 5px 5px 0px var(--back-color-n2-800);
     transition: all 0.5s;
@@ -529,7 +529,7 @@ footer {
     border-radius: 15px;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--back-color-a3-700)), url('../image/socials.png');
     background-position: center;
-    background-size: auto 380%;
+    background-size: auto 400%;
     margin: 0px -8px 0px -8px;
     box-shadow: 5px 5px 0px var(--back-color-n2-800);
     transition: all 0.5s;
@@ -577,6 +577,12 @@ input:hover {
     color: var(--back-color-a1-100);
     background-color: var(--back-color-a2-900);
     border-bottom: solid 2px var(--back-color-a1-200);
+    transition: all 0.2s;
+}
+input:active {
+    color: var(--back-error80);
+    background-color: var(--back-error20);
+    border-bottom: solid 2px var(--back-error60);
     transition: all 0.2s;
 }
 .welcome-text-en {
@@ -649,6 +655,9 @@ input:hover {
     }
 }
 @media (max-width: 1000px) {
+    footer {
+        padding: 10px;
+    }
     .grid-apps {
         grid-template-columns: repeat(1, minmax(110px, 1fr));
     }
@@ -673,9 +682,6 @@ input:hover {
         padding-top: 5px;
         padding-bottom: 5px;
         width: 100%;
-    }
-    .switch {
-        padding: 8px;
     }
     .friends-link {
         width: 66px;
@@ -756,12 +762,10 @@ input:hover {
     .popup .menu::-webkit-scrollbar {
         width: 10px;
     }
-      
     .popup .menu::-webkit-scrollbar-track {
         border-radius: 10px;
         background: var(--back-color-a1-200);
     }
-      
     .popup .menu::-webkit-scrollbar-thumb {
         background-color: var(--back-color-a1-800);
         border-radius: 10px;
